@@ -9,7 +9,7 @@ export default function About() {
 
     
     const [btnText, setBtnText] = useState("Enable Dark Mode")
-    const toggleStyle = ()=>{
+    const toggleStyleDarkModeOnClick = ()=>{
         if(myStyle.color === 'black'){
             setMyStyle({
                 color: 'white',
@@ -69,7 +69,7 @@ export default function About() {
                 </div>
             </div>
             <div className="container my-3">
-                <button type="button" onClick={toggleStyle} className="btn btn-primary">{btnText}</button>
+                <button type="button" onClick={toggleStyleDarkModeOnClick} className="btn btn-primary">{btnText}</button>
             </div>
         </div>
     )
